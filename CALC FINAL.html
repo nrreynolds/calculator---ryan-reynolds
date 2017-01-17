@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic calculator</title>
+<style type="text/css">
+body 
+{
+  background : -moz-linear-gradient(7.4% 109.49% 0deg,rgba(255, 255, 255, 1) 0%,rgba(197, 197, 197, 1) 15%,rgba(138, 138, 138, 1) 32.03%,rgba(88, 88, 88, 1) 48.49%,rgba(50, 50, 50, 1) 63.92%,rgba(23, 23, 23, 1) 78.1%,rgba(6, 6, 6, 1) 90.57%,rgba(0, 0, 0, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(197, 197, 197, 1) 15%, rgba(138, 138, 138, 1) 32.03%, rgba(88, 88, 88, 1) 48.49%, rgba(50, 50, 50, 1) 63.92%, rgba(23, 23, 23, 1) 78.1%, rgba(6, 6, 6, 1) 90.57%, rgba(0, 0, 0, 1) 100%);
+  background : -webkit-gradient(linear,7.4% 109.49% ,121.1% 109.49% ,color-stop(0,rgba(255, 255, 255, 1) ),color-stop(0.15,rgba(197, 197, 197, 1) ),color-stop(0.3203,rgba(138, 138, 138, 1) ),color-stop(0.4849,rgba(88, 88, 88, 1) ),color-stop(0.6392,rgba(50, 50, 50, 1) ),color-stop(0.781,rgba(23, 23, 23, 1) ),color-stop(0.9057,rgba(6, 6, 6, 1) ),color-stop(1,rgba(0, 0, 0, 1) ));
+  background : -o-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(197, 197, 197, 1) 15%, rgba(138, 138, 138, 1) 32.03%, rgba(88, 88, 88, 1) 48.49%, rgba(50, 50, 50, 1) 63.92%, rgba(23, 23, 23, 1) 78.1%, rgba(6, 6, 6, 1) 90.57%, rgba(0, 0, 0, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(197, 197, 197, 1) 15%, rgba(138, 138, 138, 1) 32.03%, rgba(88, 88, 88, 1) 48.49%, rgba(50, 50, 50, 1) 63.92%, rgba(23, 23, 23, 1) 78.1%, rgba(6, 6, 6, 1) 90.57%, rgba(0, 0, 0, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(197, 197, 197, 1) 15%, rgba(138, 138, 138, 1) 32.03%, rgba(88, 88, 88, 1) 48.49%, rgba(50, 50, 50, 1) 63.92%, rgba(23, 23, 23, 1) 78.1%, rgba(6, 6, 6, 1) 90.57%, rgba(0, 0, 0, 1) 100%);
+  border-style : Solid;
+  border-color : #000000;
+  border-color : rgba(0, 0, 0, 1);
+  border-width : 1px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#000000' , GradientType=1);
+}
+
+#screen {
+	width:400px;
+}
+
+input[type=button] {
+  width: 100px;
+  height: 200px;
+}
+
+.button {
+	padding: 20px 20px;
+	height:20px;
+}
+</style>
+</head>
+<body>
+<FORM NAME="Calc">
+<TABLE align="center" border="200px">
+<TR>
+<TD>
+<INPUT TYPE="text" id="screen"  NAME="Input" Size="16">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT TYPE="button" VALUE="  ONE  " OnClick="Calc.Input.value += '1'">
+<INPUT TYPE="button" VALUE=" TWO " OnCLick="Calc.Input.value += '2'">
+<INPUT TYPE="button" VALUE=" THREE " OnClick="Calc.Input.value += '3'">
+<INPUT TYPE="button" VALUE=" ADDITION " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" VALUE=" FOUR " OnClick="Calc.Input.value += '4'">
+<INPUT TYPE="button" VALUE=" FIVE " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" VALUE=" SIX " OnClick="Calc.Input.value += '6'">
+<INPUT TYPE="button" VALUE=" MINUS " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" VALUE=" SEVEN " OnClick="Calc.Input.value += '7'">
+<INPUT TYPE="button" VALUE=" EIGHT " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" VALUE=" NINE " OnClick="Calc.Input.value += '9'">
+<INPUT TYPE="button" VALUE=" MULTIPLY " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" VALUE=" CLEAR " OnClick="Calc.Input.value = ''">
+<INPUT TYPE="button" VALUE=" ZERO " OnClick="Calc.Input.value += '0'">
+<INPUT TYPE="button" VALUE=" EQUALS " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT TYPE="button" VALUE=" DIVIDE " OnClick="Calc.Input.value += ' / '">
+<br>
+<INPUT TYPE="button" VALUE=" AVERAGE " OnClick="Calc.Input.value = average()">
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+</body>
+</html>
